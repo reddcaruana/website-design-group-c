@@ -1,0 +1,56 @@
+/* This is a CSS comment */
+/* CSS Reset -> resets the style of everything */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f0f2f4; /* background color */
+    font-family: Roboto, Arial, Helvetica, sans-serif; /* main font */
+    color: #0f0f12; /* font color */
+    line-height: 1.6; /* line separation */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'BBH Sans Hegarty', Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem; /* rem -> font size of the body (default: 16px) */
+}
+
+nav {
+    border-bottom-color: #b0b2d4;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+
+    text-align: center;
+
+    padding: 0.5rem;
+}
+
+/* This next part only changes the navigation links */
+nav a {
+    color: #577ebd;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+/* This is what happens when we hover over a link */
+nav a:hover {
+    color: #4c6894;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+section {
+    background-color: #d0d2f4;
+    padding: 1rem;
+    
+    border-color: #b0b2d4;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 8px;
+    
+    margin: 0.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
