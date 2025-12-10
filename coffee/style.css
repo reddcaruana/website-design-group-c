@@ -234,3 +234,22 @@ h1, h2, h3, h4, h5, h6 {
     overflow: clip;
     text-overflow: ellipsis;
 }
+
+/*************************************** MOBILE LAYOUT ***************************************/
+@media (max-width: 600px) {
+
+    .container {
+        margin: var(--space-2);
+    }
+
+    .sm-grid-1col {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .sm-grid-2col {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
