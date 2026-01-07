@@ -235,6 +235,49 @@ h1, h2, h3, h4, h5, h6 {
     text-overflow: ellipsis;
 }
 
+/*************************************** CONTACT FORM ***************************************/
+.contact-form label {
+    display: block;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+    appearance: none;
+
+    border-color: var(--muted);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 4px;
+
+    display: block;
+    width: 100%;
+
+    font-size: 1em;
+    font-family: var(--font-base);
+    padding: var(--space-1);
+}
+
+.contact-form textarea {
+    resize: none;
+}
+
+.contact-form div {
+    margin: var(--space-1) 0;
+}
+
+.contact-form .error {
+    color: #c00;
+    font-size: 0.8em;
+    display: none;
+}
+
+/* When the input is incorrectly filled,
+    trigger the error sibling */
+.contact-form :user-invalid + .error {
+    display: block;
+}
+
 /*************************************** MOBILE LAYOUT ***************************************/
 @media (max-width: 600px) {
 

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Contact Form</title>
+</head>
+<body>
+    
+    <form action="mailto:info@coffee.com" method="post" enctype="text/plain" class="contact-form">
+        
+        <div>
+            <label for="input-subject">Topic:</label>
+            <select name="subject" id="input-subject" required>
+                <option value="" disabled selected>Choose a Subject</option>
+                <option value="love-coffee">I love coffee</option>
+                <option value="hate-coffee">I hate coffee</option>
+            </select>
+
+            <p class="error">Please choose a topic!</p>
+        </div>
+
+        <!-- This is to separate all inputs -->
+        <div>
+            <!-- for="" will link to another ID -->
+            <label for="input-name">Name:</label>
+            <input type="text" name="name" id="input-name"
+            placeholder="John Smith" required>
+
+            <p class="error">Please write your name here!</p>
+        </div>
+        
+        <div>
+            <label for="input-email">Email:</label>
+            <input type="email" name="email" id="input-email"
+            placeholder="me@example.com" required>
+
+            <p class="error">Please add your contact info!</p>
+        </div>
+        
+        <div>
+            <label for="input-message">Your Message:</label>
+            <textarea name="message" id="input-message" cols="30" rows="10"
+                placeholder="Your message..." required minlength="20"></textarea>
+
+            <p class="error">Please write at least 20 characters!</p>
+        </div>
+        
+        <div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="reset" class="btn btn-secondary">Reset</button>
+        </div>
+        
+    </form>
+    
+</body>
+</html>
